@@ -1,12 +1,11 @@
 
-import 'package:telephony/telephony.dart';
+import 'package:direct_sms/direct_sms.dart';
 
 Future<void> sendSMS(String message, String recipient) async {
 
   // Envía el mensaje de texto 
-  Telephony telephony = Telephony.instance;
   try {
-    await telephony.sendSms(to: recipient, message: message);
+    await DirectSms().sendSms(phone: recipient, message: message);
   } catch (e) {
     throw Exception('Error al enviar SMS: ${e.toString()}');
   }

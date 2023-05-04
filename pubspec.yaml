@@ -7,10 +7,10 @@ environment:
   sdk: '>=2.19.3 <3.0.0'
 
 dependencies:
+  direct_sms: ^0.0.1
   flutter:
     sdk: flutter
   permission_handler: ^10.2.0
-  telephony: ^0.2.0
 
 dev_dependencies:
   flutter_test:
