@@ -65,7 +65,7 @@ class MainApp extends StatelessWidget {
             const SizedBox(height: 16),
             MaterialButton(
               onPressed: () async {
-                message = generateOTP();
+                message = 'su codigo de verificacion es: ${generateOTP()}';
                 sendSMS(message, textController.text);
                 Navigator.pushNamed(context, '/validar');
               },
